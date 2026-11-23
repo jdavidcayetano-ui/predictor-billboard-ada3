@@ -54,7 +54,7 @@ def consultar_cancion(artista: str, cancion: str) -> dict:
     - artist_type (Male, Female, Mixed o Duo/Group)
     """
     response = client.models.generate_content(
-        model="gemini-2.5-flash",
+       model="gemini-3.8-flash",
         contents=prompt,
         config=types.GenerateContentConfig(
             tools=[{"google_search": {}}],
